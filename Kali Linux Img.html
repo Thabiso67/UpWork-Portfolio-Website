@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kali VM Images</title>
+  <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo"> 
+    <a href="index.html" style="text-decoration: none; color: inherit;">Thabiso Thabethe</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About Me.html">About Me</a></li>
+      <li><a href="My Projects.html">Projects</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="media-section">
+    <h1>Kali Linux VM – Images</h1>
+    <p>
+      This page contains visual documentation of the Kali Linux virtual machine setup and usage,
+      showing key stages of the lab environment and system configuration used during hands-on cybersecurity practice.
+      Click on any image to open and view it in full size for better visibility.
+    </p>
+  </section>
+
+  <section class="media-section">
+    <br>
+    <h1>Compeleted Lab Setup</h1>
+    <br>
+    <div class="media-grid">
+        <p>Shows the configured Kali Linux virtual machine inside VirtualBox,
+           including system resources and hardware settings used for the lab environment.</p>
+        <a href="Images/Installed Kali Linux Virtual Machine.png" target="_blank">
+        <img src="Images/Installed Kali Linux Virtual Machine.png" height="190" alt="Kali Linux desktop">
+        </a>
+    </div>
+  </section>
+<br>
+  <section class="media-section">
+    <h1>System Usage</h1>
+<br>
+    <div class="media-grid">
+        <p>Displays the running Kali Linux desktop
+           used to perform hands-on cybersecurity and Linux practice inside the virtual machine.</p>
+        <a href="Images/Kali Linux Desktop.png" target="_blank">
+        <img src="Images/Kali Linux Desktop.png" height="190" alt="Kali Linux desktop">
+    </div>
+  </section>
+<br>
+  <div class="media-footer">
+    <button type="button" class="btn-small" onclick="goBack()">← Back</button>
+  </div>
+
+</main>
+
+<script>
+  function goBack() {
+    window.location.href = "Kali Linux.html";
+  }
+</script>
+<footer class="site-footer">
+  <p>© <span id="year"></span> Thabiso Thabethe. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

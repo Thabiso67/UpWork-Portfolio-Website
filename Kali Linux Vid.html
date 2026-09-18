@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kali VM Videos</title>
+  <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo"> 
+    <a href="index.html" style="text-decoration: none; color: inherit;">Thabiso Thabethe</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About Me.html">About Me</a></li>
+      <li><a href="My Projects.html">Projects</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="page">
+
+  <section class="media-header">
+    <h1>Kali Linux VM – Videos</h1>
+    <p>
+      Below is a short video demonstration showing the Kali Linux virtual machine
+      running and navigating through the desktop.
+    </p>
+  </section>
+<br>
+  <section class="media-section">
+    <h1>Demonstration</h1>
+    <br>
+    <div class="media-grid">
+   <iframe
+  width="100%"
+  height="315"
+  src="https://www.youtube.com/embed/-bs7JdLHCJQ"
+  title="Kali Linux VM Lab"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
+    </div>
+  </section>
+  <br>
+  <div class="media-footer">
+    <button type="button" class="btn-small" onclick="goBack()">← Back</button>
+  </div>
+
+</main>
+
+<script>
+  function goBack() {
+    window.location.href = "Kali Linux.html";
+  }
+</script>
+<footer class="site-footer">
+  <p>© <span id="year"></span> Thabiso Thabethe. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

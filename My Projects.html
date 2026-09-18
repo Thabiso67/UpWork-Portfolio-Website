@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Thabiso</title>
+  <link rel="stylesheet" href="CSS.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"> 
+       <a href="index.html" style="text-decoration: none; color: inherit;">Thabiso Thabethe</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Me.html">About Me</a></li>
+        <li><a href="My Projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1>My Projects</h1>
+    <p>A collection of hands-on cybersecurity labs and technical projects focused on virtualisation and security fundamentals.
+       Each project is documented to demonstrate practical setup, troubleshooting and learning outcomes.</p>
+    <div class="projects-grid">
+<div class="project-card">
+        <h2>Credential Security Validator</h2>
+        <p>A web-based tool that evaluates password strength in real time based on length,
+           character variety, and common security rules.
+           Built to demonstrate secure input handling,
+           basic security concepts,
+           and front-end logic implementation</p>
+        <div class="project-links">
+          <a href="https://thabiso67.github.io/Credential-Security-Validator/" class="btn-small">View Project</a>
+          <a href="https://github.com/Thabiso67" target="_blank">
+            <img src="Images/GitHub-Logo.png" alt="GitHub" class="social-icon-small" />
+          </a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h2>Kali Linux Virtual Machine</h2>
+        <p>A configured Kali Linux virtual machine used for hands-on cybersecurity practice. 
+           This project demonstrates foundational Linux knowledge, virtualization setup,
+           system resource management,
+           and real-world troubleshooting experience.</p>
+        <div class="project-links">
+          <a href="Kali Linux.html" class="btn-small">View Project</a>
+          <a href="https://github.com/Thabiso67" target="_blank">
+            <img src="Images/GitHub-Logo.png" alt="GitHub" class="social-icon-small" />
+          </a>
+      </div>
+    </div>
+    
+  </main>
+  <footer class="site-footer">
+  <p>© <span id="year"></span> Thabiso Thabethe. All rights reserved.</p>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+
+</html>

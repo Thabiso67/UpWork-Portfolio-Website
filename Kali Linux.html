@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kali Linux VM Lab | Thabiso Thabethe</title>
+
+  <link rel="stylesheet" href="CSS.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo"> 
+   <a href="index.html" style="text-decoration: none; color: inherit;">Thabiso Thabethe</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About Me.html">About Me</a></li>
+      <li><a href="My Projects.html">Projects</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page">
+
+  <section class="project-hero">
+    <h1>Kali Linux Virtual Machine</h1>
+    <p>
+      A Kali Linux virtual machine is a virtualised installation of the Kali Linux operating system
+      that runs inside a host computer using virtualisation software such as VirtualBox.
+      It allows Kali Linux to be used in an isolated and safe environment to practise cybersecurity
+      and Linux tasks without affecting the host operating system.
+    </p>
+  </section>
+
+  <br>
+
+  <section class="project-section">
+    <h1>Project Overview</h1>
+    <p>
+      This project focuses on creating and configuring a Kali Linux virtual machine using VirtualBox.
+      The lab was designed to introduce Linux fundamentals, system configuration and virtualisation
+      concepts commonly used in cybersecurity environments.
+      The environment is used for continuous hands-on practice.
+    </p>
+  </section>
+
+  <br>
+
+  <section class="project-section">
+    <h1>Lab Environment</h1>
+    <ul class="project-list">
+      <li><strong>Host OS:</strong> Windows 11</li>
+      <li><strong>Virtualisation platform:</strong> VirtualBox</li>
+      <li><strong>Guest OS:</strong> Kali Linux (Graphical Desktop)</li>
+      <li><strong>RAM allocation:</strong> 2 GB</li>
+      <li><strong>CPU cores:</strong> 2</li>
+      <li><strong>Storage:</strong> 25 GB</li>
+    </ul>
+  </section>
+
+  <br>
+
+  <section class="project-section">
+    <h1>Implementation Process</h1>
+    <ul class="project-list">
+      <li>Enabled hardware virtualisation in system BIOS</li>
+      <li>Configured VirtualBox machine settings for stability</li>
+      <li>Installed Kali Linux using the graphical installer</li>
+      <li>Resolved installation failures caused by low memory allocation</li>
+      <li>Completed GRUB bootloader installation</li>
+      <li>Successfully launched and verified the VM environment</li>
+    </ul>
+  </section>
+
+  <br>
+
+  <section class="project-section">
+    <h1>Key Learnings</h1>
+    <ul class="project-list">
+      <li>How virtualisation supports cybersecurity workflows</li>
+      <li>Basic Linux system navigation and terminal usage</li>
+      <li>How hardware resources affect virtual machine performance</li>
+      <li>The importance of structured troubleshooting and iteration</li>
+    </ul>
+  </section>
+
+  <br>
+
+  <section class="project-section media-links">
+    <h1>Lab Media</h1>
+    <p>
+      Visual documentation of the Kali Linux virtual machine including screenshots and short
+      video walkthroughs.
+    </p>
+
+    <br>
+
+    <div class="media-buttons">
+      <button class="btn-small" onclick="openImages()">View Images</button>
+      <button class="btn-small" onclick="openVideos()">View Videos</button>
+    </div>
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  function openImages() {
+    window.location.href = "Kali Linux Img.html";
+  }
+
+  function openVideos() {
+    window.location.href = "Kali Linux Vid.html";
+  }
+</script>
+<footer class="site-footer">
+  <p>© <span id="year"></span> Thabiso Thabethe. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
